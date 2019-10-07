@@ -1,0 +1,23 @@
+<html>
+define(M4_EYE_SVG, http://localhost:8000/eye.svg) dnl
+define(M4_GAME, ..) dnl
+<head>
+  <meta charset="UTF-8" />
+  <title>M4_TITLE</title>
+include(head.html)
+  <style>
+include(main.css)
+include(selector.css)
+include(screenshot.css)
+  </style>
+  <script type="text/javascript">
+include(main.js)
+  </script>
+</head>
+<body style="background-color: #000000" onload="clearItForm.reset();">
+<div class="main-div">
+
+<div style="min-height:700px">
+  <a href="../../index.html"><h1>ooyoot</h1></a>
+
+  <center>

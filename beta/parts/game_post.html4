@@ -1,0 +1,11 @@
+  </center>
+</div> <!-- min-height -->
+
+<footer>
+include(footer.html)
+</footer>
+
+</div> <!-- main-div -->
+</body>
+</html>
+

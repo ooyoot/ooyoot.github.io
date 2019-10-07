@@ -1,0 +1,21 @@
+    input[type='checkbox'].thumbnail {
+      cursor: pointer;
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .screenshot {
+        position: fixed;
+        width: 94vw;
+        height: 100vh;
+        top: 0;
+        left: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    input[type='checkbox'].thumbnail:checked + label > .screenshot {
+        display: flex;
+    }

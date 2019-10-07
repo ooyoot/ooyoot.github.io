@@ -1,0 +1,55 @@
+    .game-item {
+        padding: 0px;
+        border-radius: 5px;
+    }
+    input[type=radio] {
+      cursor: pointer;
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    input[type=radio] + a {
+      cursor: pointer;
+      transition:all 0.2s linear;
+      filter: gray; /* IE6-9 */
+      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    }
+    input[type=radio]:checked + a {
+      transition:all 0.2s linear;
+      filter: initial;
+      -webkit-filter: initial;
+      filter: initial;
+    }
+    .label-usual {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .game-item {
+        padding: 0px;
+        border-radius: 5px;
+    }
+    .games-list .cursedcoin-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .crowndungeon-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .aldente-details {
+        display: none;
+    }
+    .games-list input[value="cursedcoin-details"]:checked ~ .cursedcoin-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="crowndungeon-details"]:checked ~ .crowndungeon-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="aldente-details"]:checked ~ .aldente-details {
+        transition:all 0.2s linear;
+        display: block;
+    }

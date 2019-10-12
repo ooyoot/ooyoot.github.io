@@ -56,14 +56,24 @@
         fill: currentColor;
     }
     .main-div {
-        position: relative;
         border-radius: 10px;
         background-color: #181818;
-        min-height: 100vh;
+        background-size: contain;
         width: 100%;
         max-width: 600;
-        overflow: hidden;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 1 auto;
+    }
+    .content {
+        padding: 15px;
+        flex: 1 0 auto;
+        flex-shrink: 0;
     }
     .grid-circle {
         #padding: 0px;
@@ -98,8 +108,8 @@
         height: 32px;
     }
     #right {
-        float:right;
-        width:100px;
+        float: right;
+        width: 100px;
         height: 32px;
     }
     #footer-container {
@@ -108,8 +118,7 @@
         background-color: rgba(24, 24, 24, 0.8);
         width: 100%;
         border-radius: 10px;
-        position: absolute;
-        bottom: 0;
+        flex-shrink: 0;
     }
     #footer {
     }
@@ -214,7 +223,7 @@
         <h2>Cursed Coin (Free Demo)</h2>
         <p><a href="https://ooyoot.itch.io/cursedcoin" ping="http://localhost:8000/eye.svg?track=cursedcoin_external" onClick='return track("cursedcoin_external");' target="_blank">
             <svg class="grid-item" style="background-color: #0078D6; fill: #fff" role="img" viewBox="-8 -8 40 40" xmlns="http://www.w3.org/2000/svg"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
-            &#x1F50D;Windows
+            Windows
         </a></p>
         <table width="100%">
           <tr>

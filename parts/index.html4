@@ -1,0 +1,57 @@
+<html>
+include(definitions.m4)
+<head>
+  <title>ooyoot</title>
+include(head.html)
+  <style>
+include(main.css)
+include(selector.css)
+include(screenshot.css)
+  </style>
+  <script type="text/javascript">
+include(main.js)
+  </script>
+</head>
+<body style="background-color: #000000">
+<div class="main-div">
+
+<div class="content">
+  <a href="/"><h1>ooyoot</h1></a>
+  <br/>
+  <br/>
+  <div class="games-list">
+  <form name="clearItForm">
+include(games_list.html)
+
+  <div class="cursedcoin-details">
+  <center>
+include(cursedcoin.html)
+  </center>
+  </div>
+
+  <div class="crowndungeon-details">
+  <center>
+include(crowndungeon.html)
+  </center>
+  </div>
+
+  <div class="aldente-details">
+  <center>
+include(aldente.html)
+  </center>
+  </div>
+  
+   </form>
+   <script type="text/javascript">
+     clearItForm.reset();
+   </script>
+   </div>
+</div> <!-- min-height -->
+
+<footer>
+include(footer.html)
+</footer>
+
+</div> <!-- main-div -->
+</body>
+</html>

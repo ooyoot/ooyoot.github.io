@@ -9,10 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
+    html {
+        height: 100%;
+    }
     body {
         color: #facd3d;
         font-family: arial, verdana, tahoma, sans-serif;
-        height: 90%;
+        min-height: 100%;
     }
     h1 {
         font-size: 280%;
@@ -49,11 +52,11 @@
         fill: currentColor;
     }
     .main-div {
-        padding: 15px;
+        position: relative;
         border-radius: 10px;
         background-color: #181818;
+        height: 100%;
         width: 100%;
-        min-width: 300;
         max-width: 600;
         margin: 0 auto;
         overflow: hidden;
@@ -94,6 +97,12 @@
         float:right;
         width:100px;
         height: 32px;
+    }
+    footer {
+        background-color: rgba(24, 24, 24, 0.8);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
     #footer {
     }
@@ -200,12 +209,12 @@
             <svg class="grid-item" style="background-color: #0078D6; fill: #fff" role="img" viewBox="-8 -8 40 40" xmlns="http://www.w3.org/2000/svg"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
             &#x1F50D;Windows
         </a></p>
-        <table>
+        <table width="100%">
           <tr>
           <td rowspan="4">
               <input class="thumbnail" type="checkbox" id="main"/>
               <label for="main">
-                <img class="thumbnail" style="border-radius: 10px" width="300" src="../cursedcoin/main.png"/>
+                <img class="thumbnail" style="border-radius: 10px; max-width:300" src="../cursedcoin/main.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/main.png"/>
                 </div>
@@ -215,7 +224,7 @@
           <tr><td>
               <input class="thumbnail" type="checkbox" id="cursedcoin-screenshot1"/>
               <label for="cursedcoin-screenshot1">
-                <img style="border-radius: 10px;" height="94" src="../cursedcoin/screenshot1.png"/>
+                <img style="border-radius: 10px; max-height: 94" src="../cursedcoin/screenshot1.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/screenshot1.png"/>
                 </div>
@@ -224,7 +233,7 @@
           <tr><td>
               <input class="thumbnail" type="checkbox" id="cursedcoin-screenshot2"/>
               <label for="cursedcoin-screenshot2">
-                <img style="border-radius: 10px;" height="94" src="../cursedcoin/screenshot2.png"/>
+                <img style="border-radius: 10px; max-height: 94" src="../cursedcoin/screenshot2.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/screenshot2.png"/>
                 </div>
@@ -233,7 +242,7 @@
           <tr><td>
               <input class="thumbnail" type="checkbox" id="cursedcoin-screenshot3"/>
               <label for="cursedcoin-screenshot3">
-                <img style="border-radius: 10px;" height="94" src="../cursedcoin/screenshot2.png"/>
+                <img style="border-radius: 10px; max-height: 94" src="../cursedcoin/screenshot2.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/screenshot2.png"/>
                 </div>

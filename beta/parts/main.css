@@ -1,7 +1,10 @@
+    html {
+        height: 100%;
+    }
     body {
         color: #facd3d;
         font-family: arial, verdana, tahoma, sans-serif;
-        height: 90%;
+        min-height: 100%;
     }
     h1 {
         font-size: 280%;
@@ -38,11 +41,11 @@
         fill: currentColor;
     }
     .main-div {
-        padding: 15px;
+        position: relative;
         border-radius: 10px;
         background-color: #181818;
+        height: 100%;
         width: 100%;
-        min-width: 300;
         max-width: 600;
         margin: 0 auto;
         overflow: hidden;
@@ -83,6 +86,12 @@
         float:right;
         width:100px;
         height: 32px;
+    }
+    footer {
+        background-color: rgba(24, 24, 24, 0.8);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
     #footer {
     }

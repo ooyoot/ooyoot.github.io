@@ -75,6 +75,10 @@
         flex: 1 0 auto;
         flex-shrink: 0;
     }
+    .table-content {
+         width: 100%;
+         max-width: 400px;
+    }
     .grid-circle {
         #padding: 0px;
         width: 46px;
@@ -187,7 +191,7 @@
       height: 0;
     }
     img.thumbnail {
-      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="30" style="font-size: 20px;"><text y="15">&#x1F50D;</text></svg>'), auto;
+      cursor: pointer;
     }
     .screenshot {
         position: fixed;
@@ -195,7 +199,6 @@
         height: 100vh;
         top: 0;
         left: 3vw;
-        display: flex;
         align-items: center;
         justify-content: center;
         display: none;
@@ -225,49 +228,51 @@
             <svg class="grid-item" style="background-color: #0078D6; fill: #fff" role="img" viewBox="-8 -8 40 40" xmlns="http://www.w3.org/2000/svg"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
             Windows
         </a></p>
-        <table width="100%">
-          <tr>
-          <td rowspan="4">
+        <table class="table-content">
+          <tr><td colspan="3">
+            <center>
               <input class="thumbnail" type="checkbox" id="main"/>
               <label for="main">
-                <img class="thumbnail" style="border-radius: 10px; max-width:300" src="../cursedcoin/main.png"/>
+                <img class="thumbnail" style="border-radius: 10px; width: 100%; max-width:300" src="../cursedcoin/main.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/main.png"/>
                 </div>
               </label>
-          </td>
-          </tr>
-          <tr><td>
+            </center>
+          </td></tr>
+          <tr>
+          <td colspan="3" style="display: flex; flex-wrap: wrap; justify-content: center; align-content: stretch; width: 100%">
               <input class="thumbnail" type="checkbox" id="cursedcoin-screenshot1"/>
               <label for="cursedcoin-screenshot1">
-                <img style="border-radius: 10px; max-height: 94" src="../cursedcoin/screenshot1.png"/>
+                <img class="thumbnail" style="border-radius: 10px; max-width: 100px" src="../cursedcoin/screenshot1.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/screenshot1.png"/>
                 </div>
               </label>
-          </td></tr>
-          <tr><td>
               <input class="thumbnail" type="checkbox" id="cursedcoin-screenshot2"/>
               <label for="cursedcoin-screenshot2">
-                <img style="border-radius: 10px; max-height: 94" src="../cursedcoin/screenshot2.png"/>
+                <img class="thumbnail" style="border-radius: 10px; max-width: 100px" src="../cursedcoin/screenshot2.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/screenshot2.png"/>
                 </div>
               </label>
-          </td></tr>
-          <tr><td>
               <input class="thumbnail" type="checkbox" id="cursedcoin-screenshot3"/>
               <label for="cursedcoin-screenshot3">
-                <img style="border-radius: 10px; max-height: 94" src="../cursedcoin/screenshot2.png"/>
+                <img class="thumbnail" style="border-radius: 10px; max-width: 100px" src="../cursedcoin/screenshot3.png"/>
                 <div class="screenshot">
-                  <img src="../cursedcoin/screenshot2.png"/>
+                  <img src="../cursedcoin/screenshot3.png"/>
                 </div>
               </label>
+          </td>
+          </tr>
+          <tr><td colspan="3">
+            <center>
+              <p>Short demo of first person adventure game.</p>
+              <p><div style="display: inline-block; color: #2cccc3">DrawmanEater</div>: game design, art.</p>
+              <p><div style="display: inline-block; color: #2cccc3">Doj</div>: programming.</p>
+            </center>
           </td></tr>
         </table>
-        <p>Short demo of first person adventure game.</p>
-        <p><div style="display: inline-block; color: #2cccc3">DrawmanEater</div>: game design, art.</p>
-        <p><div style="display: inline-block; color: #2cccc3">Doj</div>: programming.</p>
     <!-- Cursed Coint details end -->
   </center>
 </div> <!-- min-height -->

@@ -64,6 +64,10 @@
         flex: 1 0 auto;
         flex-shrink: 0;
     }
+    .table-content {
+         width: 100%;
+         max-width: 400px;
+    }
     .grid-circle {
         #padding: 0px;
         width: 46px;

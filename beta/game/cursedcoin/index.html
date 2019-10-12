@@ -65,8 +65,12 @@
     }
     .grid-item {
         object-fit: cover;
-        width: 40px;
-        height: 40px;
+        width: 10%;
+        height: 10%;
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 120px;
+        max-height: 120px;
         vertical-align: middle;
         border-radius: 50%;
         overflow: hidden;
@@ -158,6 +162,9 @@
       width: 0;
       height: 0;
     }
+    img.thumbnail {
+      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="30" style="font-size: 20px;"><text y="15">&#x1F50D;</text></svg>'), auto;
+    }
     .screenshot {
         position: fixed;
         width: 94vw;
@@ -192,14 +199,14 @@
         <h2>Cursed Coin (Free Demo)</h2>
         <p><a href="https://ooyoot.itch.io/cursedcoin" ping="http://localhost:8000/eye.svg?track=cursedcoin_external" onClick='return track("cursedcoin_external");' target="_blank">
             <svg class="grid-item" style="background-color: #0078D6; fill: #fff" role="img" viewBox="-8 -8 40 40" xmlns="http://www.w3.org/2000/svg"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
-            Windows
+            &#x1F50D;Windows
         </a></p>
         <table>
           <tr>
           <td rowspan="4">
               <input class="thumbnail" type="checkbox" id="main"/>
               <label for="main">
-                <img style="border-radius: 10px;" width="300" src="../cursedcoin/main.png"/>
+                <img class="thumbnail" style="border-radius: 10px" width="300" src="../cursedcoin/main.png"/>
                 <div class="screenshot">
                   <img src="../cursedcoin/main.png"/>
                 </div>

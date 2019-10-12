@@ -1,7 +1,6 @@
 <html>
 include(definitions.m4)
 <head>
-  <meta charset="UTF-8" />
   <title>ooyoot</title>
 include(head.html)
   <style>
@@ -13,7 +12,7 @@ include(screenshot.css)
 include(main.js)
   </script>
 </head>
-<body style="background-color: #000000" onload="clearItForm.reset();">
+<body style="background-color: #000000">
 <div class="main-div">
 
 <div style="min-height:700px">
@@ -43,6 +42,9 @@ include(aldente.html)
   </div>
   
    </form>
+   <script type="text/javascript">
+     clearItForm.reset();
+   </script>
    </div>
 </div> <!-- min-height -->
 

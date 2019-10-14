@@ -2,6 +2,7 @@
 include(definitions.m4)
 <head>
   <title>ooyoot</title>
+  <link href="logo/ooyoot256.png" type="image/jpeg" rel="image_src" />
 include(head.html)
   <style>
 include(main.css)

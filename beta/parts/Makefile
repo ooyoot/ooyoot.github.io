@@ -1,6 +1,6 @@
 default : generate;
 
-M4 = m4
+M4 = C:/proj/tools/build/win32/m4.exe
 
 generate :
 	$(M4) index.html4 > ../index.html

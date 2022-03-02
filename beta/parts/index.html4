@@ -43,7 +43,7 @@ include(aldente.html)
   </div>
   
    </form>
-   <-- <script type="text/javascript">
+   <!-- <script type="text/javascript">
      clearItForm.reset();
    </script> -->
    </div>

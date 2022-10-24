@@ -131,6 +131,9 @@
     .game-item {
         padding: 0px;
         border-radius: 5px;
+        cursor: pointer;
+        background-color: #7289DA;
+        fill: #fff;
     }
     input[type=radio] {
       cursor: pointer;
@@ -156,9 +159,29 @@
         transition:all 0.2s linear;
         display: none;
     }
-    .game-item {
-        padding: 0px;
-        border-radius: 5px;
+    .games-list .hton-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .oddgardens-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .perestroika3d-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .chueue-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .witchswell-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .beastscastle-details {
+        transition:all 0.2s linear;
+        display: none;
     }
     .games-list .cursedcoin-details {
         transition:all 0.2s linear;
@@ -170,6 +193,30 @@
     }
     .games-list .aldente-details {
         display: none;
+    }
+    .games-list input[value="hton-details"]:checked ~ .hton-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="oddgardens-details"]:checked ~ .oddgardens-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="perestroika3d-details"]:checked ~ .perestroika3d-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="chueue-details"]:checked ~ .chueue-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="witchswell-details"]:checked ~ .witchswell-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="beastscastle-details"]:checked ~ .beastscastle-details {
+        transition:all 0.2s linear;
+        display: block;
     }
     .games-list input[value="cursedcoin-details"]:checked ~ .cursedcoin-details {
         transition:all 0.2s linear;
@@ -225,25 +272,126 @@
   <br/>
   <div class="games-list">
   <form name="clearItForm">
-    <input id="cursedcoin" type="radio" name="game" value="cursedcoin-details"/>
-    <a href="game/cursedcoin">
-    <label for="cursedcoin">
-      <img src="game/cursedcoin/icon162.png" class="game-item" style="cursor: pointer; background-color: #7289DA; fill: #fff" width="45" height="45" />
-    </label>
-    </a>
-    <input id="crowndungeon" type="radio" name="game" value="crowndungeon-details"/>
-    <a href="game/crowndungeon">
-    <label for="crowndungeon">
-      <img src="game/crowndungeon/icon105.png" class="game-item" style="cursor: pointer; background-color: #7289DA; fill: #fff" width="45" height="45" />
-    </label>
-    </a>
-    <input id="aldente" type="radio" name="game" value="aldente-details"/>
-    <a href="game/aldente">
-    <label for="aldente">
-      <img src="game/aldente/icon86.png" class="game-item" style="cursor: pointer; background-color: #7289DA; fill: #fff" width="45" height="45" />
+    <input id="hton" type="radio" name="game" value="hton-details"/>
+    <a href="game/hton">
+    <label for="hton">
+      <img src="game/hton/icon100.png" title="HTON" class="game-item" width="45" height="45" />
     </label>
     </a>
 
+    <input id="oddgardens" type="radio" name="game" value="oddgardens-details"/>
+    <a href="game/oddgardens">
+    <label for="oddgardens">
+      <img src="game/oddgardens/icon100.png" title="Odd Gardens" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+    <input id="perestroika3d" type="radio" name="game" value="perestroika3d-details"/>
+    <a href="game/perestroika3d">
+    <label for="perestroika3d">
+      <img src="game/perestroika3d/icon100.png" title="Perestroika 3D" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+    <input id="chueue" type="radio" name="game" value="chueue-details"/>
+    <a href="game/chueue">
+    <label for="chueue">
+      <img src="game/chueue/icon100.png" title="Chueue" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+    <input id="witchswell" type="radio" name="game" value="witchswell-details"/>
+    <a href="game/witchswell">
+    <label for="witchswell">
+      <img src="game/witchswell/icon100.png" title="Witch's Well" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+    <input id="beastscastle" type="radio" name="game" value="beastscastle-details"/>
+    <a href="game/beastscastle">
+    <label for="beastscastle">
+      <img src="game/beastscastle/icon25.png" title="Beast's Castle" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+    <input id="aldente" type="radio" name="game" value="aldente-details"/>
+    <a href="game/aldente">
+    <label for="aldente">
+      <img src="game/aldente/icon86.png" title="Al Dente" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+    <input id="cursedcoin" type="radio" name="game" value="cursedcoin-details"/>
+    <a href="game/cursedcoin">
+    <label for="cursedcoin">
+      <img src="game/cursedcoin/icon162.png" title="Cursed Coin" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+    <input id="crowndungeon" type="radio" name="game" value="crowndungeon-details"/>
+    <a href="game/crowndungeon">
+    <label for="crowndungeon">
+      <img src="game/crowndungeon/icon105.png" title="Crown Dungeon" class="game-item" width="45" height="45" />
+    </label>
+    </a>
+
+
+
+  <div class="hton-details">
+  <center>
+    <!-- HTON begin -->
+    <h2>HTON (WIP)</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dwCCzu9XzAU" title="HTON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- HTON end -->
+
+  </center>
+  </div>
+
+  <div class="oddgardens-details">
+  <center>
+    <!-- Odd Gardens begin -->
+    <h2>Odd Gardens (WIP)</h2>
+    <iframe src="//coub.com/embed/26g6re?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="640" height="400" allow="autoplay"></iframe>
+    <!-- Odd Gardens end -->
+
+  </center>
+  </div>
+
+  <div class="perestroika3d-details">
+  <center>
+    <!-- Perestroika 3D begin -->
+    <h2>Perestroika 3D (Prototype)</h2>
+    <!-- Perestroika 3D end -->
+
+  </center>
+  </div>
+
+  <div class="chueue-details">
+  <center>
+    <!-- Chueue begin -->
+    <h2>Chueue</h2>
+    <!-- Chueue end -->
+
+  </center>
+  </div>
+
+  <div class="witchswell-details">
+  <center>
+    <!-- Witch's Well begin -->
+    <h2>Witch's Well</h2>
+    <!-- Witch's Well end -->
+
+  </center>
+  </div>
+
+  <div class="beastscastle-details">
+  <center>
+    <!-- Beast's Castle begin -->
+    <h2>Beast's Castle</h2>
+    <!-- Beast's Castle end -->
+
+  </center>
+  </div>
 
   <div class="cursedcoin-details">
   <center>

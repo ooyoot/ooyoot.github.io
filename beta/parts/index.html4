@@ -24,6 +24,42 @@ include(main.js)
   <form name="clearItForm">
 include(games_list.html)
 
+  <div class="hton-details">
+  <center>
+include(hton.html)
+  </center>
+  </div>
+
+  <div class="oddgardens-details">
+  <center>
+include(oddgardens.html)
+  </center>
+  </div>
+
+  <div class="perestroika3d-details">
+  <center>
+include(perestroika3d.html)
+  </center>
+  </div>
+
+  <div class="chueue-details">
+  <center>
+include(chueue.html)
+  </center>
+  </div>
+
+  <div class="witchswell-details">
+  <center>
+include(witchswell.html)
+  </center>
+  </div>
+
+  <div class="beastscastle-details">
+  <center>
+include(beastscastle.html)
+  </center>
+  </div>
+
   <div class="cursedcoin-details">
   <center>
 include(cursedcoin.html)

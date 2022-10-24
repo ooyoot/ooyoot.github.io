@@ -130,6 +130,9 @@
     .game-item {
         padding: 0px;
         border-radius: 5px;
+        cursor: pointer;
+        background-color: #7289DA;
+        fill: #fff;
     }
     input[type=radio] {
       cursor: pointer;
@@ -155,9 +158,29 @@
         transition:all 0.2s linear;
         display: none;
     }
-    .game-item {
-        padding: 0px;
-        border-radius: 5px;
+    .games-list .hton-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .oddgardens-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .perestroika3d-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .chueue-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .witchswell-details {
+        transition:all 0.2s linear;
+        display: none;
+    }
+    .games-list .beastscastle-details {
+        transition:all 0.2s linear;
+        display: none;
     }
     .games-list .cursedcoin-details {
         transition:all 0.2s linear;
@@ -169,6 +192,30 @@
     }
     .games-list .aldente-details {
         display: none;
+    }
+    .games-list input[value="hton-details"]:checked ~ .hton-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="oddgardens-details"]:checked ~ .oddgardens-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="perestroika3d-details"]:checked ~ .perestroika3d-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="chueue-details"]:checked ~ .chueue-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="witchswell-details"]:checked ~ .witchswell-details {
+        transition:all 0.2s linear;
+        display: block;
+    }
+    .games-list input[value="beastscastle-details"]:checked ~ .beastscastle-details {
+        transition:all 0.2s linear;
+        display: block;
     }
     .games-list input[value="cursedcoin-details"]:checked ~ .cursedcoin-details {
         transition:all 0.2s linear;
